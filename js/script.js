@@ -69,9 +69,9 @@ function getRandomQuote() {
 function printQuote(){
   quoteObject = getRandomQuote();
       printedText = "<p class=\"quote\">" + quoteObject.quote + "</p><p class=\"source\"> " + quoteObject.source + "</p>" +"</p><p class=\"tag\"> " + quoteObject.tag + "</p>";
-      //how it appears on html
+      //text as it'll appear in box
       document.getElementById('quote-box').innerHTML = printedText;
-      //make it appear on the page
+      //make it appear on the page in the quote-box
 
 }
 
@@ -79,7 +79,7 @@ function printQuote(){
 // when user clicks anywhere on the button, the "printQuote" function is called
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
-//change background color
+//change background color on click
 document.getElementById("loadQuote").addEventListener("click", function rndColor(){
     let red = Math.floor((Math.random() * 256));
     let green = Math.floor((Math.random() * 256));
@@ -88,4 +88,3 @@ document.getElementById("loadQuote").addEventListener("click", function rndColor
     document.body.style.backgroundColor = color;
 
 });
-//change quote timer
