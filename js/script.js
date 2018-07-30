@@ -1,6 +1,6 @@
 // FSJS - Random Quote Generator
 
-// Create the array of quote objects and name it quotes
+// The array of my quotes to be randomly choosen from
 var quotes = [
   {quote:"The human race has one really effective weapon, and that is laughter.",
   source:"Mark Twain",
@@ -56,7 +56,7 @@ var quotes = [
 ];
 
 
-// Create the getRandomQuote function and name it getRandomQuote
+// function to choose a random quote from the array
 
 function getRandomQuote() {
   let randomQuote = Math.floor(Math.random()*(quotes.length))
@@ -64,7 +64,7 @@ function getRandomQuote() {
 }
 
 
-// Create the printQuote funtion and name it printQuote
+// printQuote code to make it appear on the page
 
 function printQuote(){
   quoteObject = getRandomQuote();
@@ -75,8 +75,8 @@ function printQuote(){
 
 }
 
-// This event listener will respond to "Show another quote" button clicks
-// when user clicks anywhere on the button, the "printQuote" function is called
+// event listener, responds to clicks on the loadQuote button from the html
+// when user clicks anywhere on the button, the "printQuote" function is called - activates the function to show random quote and change color
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
 //change background color on click
