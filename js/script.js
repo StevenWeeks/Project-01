@@ -24,7 +24,7 @@ var quotes = [
 
   {quote:"Real knowledge is to know the extent of one's ignorance.",
   source:"Confucius",
-  tag:"Critical"},
+  tag:"Self Critic"},
 
   {quote:"Learn as if you were going to live forever. Live as if you were going to die tomorrow.",
   source:"Mahatma Gandhi",
@@ -52,7 +52,7 @@ var quotes = [
 
   {quote:"All our dreams can come true, if we have the courage to pursue them.",
   source:"Walt Disney",
-  tag:"Dream"}
+  tag:"Dreams"}
 ];
 
 
@@ -68,7 +68,7 @@ function getRandomQuote() {
 
 function printQuote(){
   quoteObject = getRandomQuote();
-      printedText = "<p class=\"quote\">" + quoteObject.quote + "</p><p class=\"source\"> " + quoteObject.source + "</p>" +"</p><p class=\"tag\"> " + quoteObject.tag + "</p>";
+      printedText = "</p>" +"</p><p class=\"tag\"> " + quoteObject.tag + "</p>" + "<p class=\"quote\">" + quoteObject.quote + "</p><p class=\"source\"> " + quoteObject.source;
       //text as it'll appear in box
       document.getElementById('quote-box').innerHTML = printedText;
       //make it appear on the page in the quote-box
