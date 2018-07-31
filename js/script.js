@@ -34,7 +34,7 @@ var quotes = [
   source:"Earl Nightingale",
   tag:"Attitude"},
 
-  {quote:"I love you not because of who you are, but because of who I am when I am with you..",
+  {quote:"I love you not because of who you are, but because of who I am when I am with you.",
   source:"Roy Croft",
   tag:"Love"},
 
@@ -56,7 +56,7 @@ var quotes = [
 ];
 
 
-// function to choose a random quote from the array
+// function to choose a random quote from the array.
 
 function getRandomQuote() {
   let randomQuote = Math.floor(Math.random()*(quotes.length))
@@ -86,5 +86,4 @@ document.getElementById("loadQuote").addEventListener("click", function rndColor
     let blue = Math.floor((Math.random() * 256));
     let color = 'rgb'+'('+red+','+green+','+blue+')';
     document.body.style.backgroundColor = color;
-
 });
