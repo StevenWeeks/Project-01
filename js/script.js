@@ -52,10 +52,16 @@ var quotes = [
 
   {quote:"All our dreams can come true, if we have the courage to pursue them.",
   source:"Walt Disney",
-  tag:"Dreams"}
-];
+  tag:"Dreams"},
 
+{quote: "blah blah blah",
+source: "Everyone",
+tag:"boring"
 
+}
+]
+
+//added this note for my practice added this too
 // function to choose a random quote from the array.
 
 function getRandomQuote() {
@@ -68,7 +74,7 @@ function getRandomQuote() {
 
 function printQuote(){
   quoteObject = getRandomQuote();
-      printedText = "</p>" +"</p><p class=\"tag\"> " + quoteObject.tag + "</p>" + "<p class=\"quote\">" + quoteObject.quote + "</p><p class=\"source\"> " + quoteObject.source;
+      printedText = "</p>" + "</p><p class=\"tag\"> " + quoteObject.tag + "</p>" + "<p class=\"quote\">" + quoteObject.quote + "</p><p class=\"source\"> " + quoteObject.source;
       //text as it'll appear in box
       document.getElementById('quote-box').innerHTML = printedText;
       //make it appear on the page in the quote-box
